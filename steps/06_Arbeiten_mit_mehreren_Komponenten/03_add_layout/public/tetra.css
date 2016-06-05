@@ -1,0 +1,345 @@
+/* https://www.google.com/fonts#UsePlace:use/Collection:Lora:400italic,700italic|PT+Sans:400,700 */
+html {
+	line-height: 1.5;
+	font-family: "PT Sans", sans-serif;
+	font-weight: normal;
+	color: rgba(0, 0, 0, 0.87);
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+
+.Header {
+	margin: 0 0 20px 0;
+	height: 46px;
+	padding: 14px 14px 0 14px;
+	color: white;
+	background-color: #A60000;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 400;
+	font-style: normal;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+}
+
+/* TODO: ist zurzeit H1-spezifisch... */
+.Badge {
+	background-color: #FFB273;
+	float: right;
+	font-size: 60%;
+	padding: 4px 8px 4px 8px;
+	min-width: 12%;
+	text-align: center;
+	border-radius: 10px;
+}
+
+.Background {
+	height: 100vh;
+	background-color: #6fd2d2;
+	width: 100%;
+	min-height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	overflow: auto;
+}
+
+.Main {
+	margin: 0 auto;
+	width: 90%;
+	max-width: 1280px;
+}
+
+.Row {
+	background-color: white;
+	color: #A60000;
+	padding: 10px 20px;
+	margin: 0 0 10px 0;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-khtml-border-radius: 10px;
+}
+
+.Row.Selectable:hover {
+	background-color: #FFB273;
+	cursor: pointer;
+}
+
+.Row.Selectable:hover .Badge {
+	background-color: white;
+}
+
+.Row.Selectable:hover .Title {
+	border-bottom: 1px solid white;
+}
+
+.VotesRow {
+	margin-left: 8.33%;
+	margin-right: 8.33%;
+}
+
+.VotingRow {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.Spacer {
+	margin-bottom: 40px;
+	margin-top: 40px;
+}
+
+.Right {
+	float: right;
+}
+
+.VotesRow .Title {
+	margin: 0 0 8px 0;
+	font-size: 24px;
+	font-weight: normal;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	border-bottom: 1px solid #FFB273;
+}
+
+.VotingRow .Title {
+	margin: 0 0 0 0;
+	font-size: 36px;
+	font-weight: normal;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+.VotesRow p {
+	font-size: 18px;
+	padding: 0;
+	margin: 0;
+}
+
+.VotingRow .Head,
+.VoteComposer .Head {
+	border-bottom: 1px solid #FFB273;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+
+.VotingRow .Description,
+.VoteComposer .Description {
+	font-size: 22px;
+	padding: 0;
+	margin: 0;
+}
+
+.Emphasis {
+	text-transform: none;
+	font-family: 'Lora', serif;
+	font-style: italic;
+}
+
+.ChoiceBar {
+	border: 3px solid #FFB273;
+	margin-bottom: 24px;
+	background-color: #5CCCCC;
+	height: 40px;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	position: relative;
+}
+
+.ChoiceBar:hover {
+	border: 3px solid #ff9640;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.ChoiceBar:hover .Progress {
+	background-color: #ff9640;
+	cursor: pointer;
+}
+
+.ChoiceBar:hover .ChoiceBarBadge {
+	background-color: #ff9640;
+	border: 1px solid #5CCCCC;
+	color: #A60000;
+}
+
+.ChoiceBarTitle {
+	position: absolute;
+	left: 8px;
+	top: 50%;
+	font-size: 16px;
+	margin-top: -11px;
+}
+
+.ChoiceBarBadge {
+	position: absolute;
+	right: 16px;
+	height: 24px;
+	font-size: 16px;
+	width: 50px;
+	top: 50%;
+	margin-top: -16px;
+	background-color: white;
+	padding: 4px 8px 4px 8px;
+	text-align: center;
+	border-radius: 10px;
+}
+
+.Progress {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	display: inline-block;
+	white-space: nowrap;
+	background-color: #FFB273;
+}
+
+/* ----------------------------------------------------------------------------------- */
+/* --- VoteComposer Component                                                          */
+/* ----------------------------------------------------------------------------------- */
+.VoteComposer .Head {
+	border-bottom: none;
+}
+
+.VoteComposer .Title {
+	margin: 0 0 5px 0;
+	font-size: 36px;
+	font-weight: normal;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+.VoteComposer input {
+	color: #A60000;
+	border: 0;
+	outline: 0;
+	margin: 0;
+	width: 100%;
+}
+
+.VoteComposer input::-moz-placeholder {
+	color: #A60000;
+}
+
+.VoteComposer input::-webkit-input-placeholder {
+	color: #A60000;
+}
+
+.VoteComposer input:-ms-input-placeholder {
+	color: #A60000;
+}
+
+.VoteComposer input:hover {
+	background-color: #5CCCCC;
+}
+
+.VoteComposer input:focus {
+	color: #A60000;
+	border: 0;
+	outline: 0;
+	background-color: white;
+}
+
+.VoteComposer .Choice {
+	border: 3px solid #FFB273;
+	margin-bottom: 24px;
+	background-color: #5CCCCC;
+	padding-left: 10px;
+	padding-right: 10px;
+	width: 100%;
+	height: 40px;
+	box-sizing: border-box;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-khtml-border-radius: 10px;
+}
+
+.VoteComposer .Choice:hover {
+	border: 3px solid #ff9640;
+}
+
+.VoteComposer .Choice:focus {
+	border: 3px solid #ff9640;
+}
+
+.VoteComposer .Body {
+	padding-bottom: 15px;
+}
+
+.ButtonBar {
+	border-top: 1px solid #5CCCCC;
+	padding-top: 15px;
+}
+
+.Button {
+	display: inline-block;
+	background-color: #5CCCCC;
+	padding: 8px 12px 8px 12px;
+	margin-right: 20px;
+	text-align: center;
+	border-radius: 10px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	cursor: pointer;
+}
+
+.Button:hover {
+	background-color: #FFB273;
+}
+
+.Button.disabled {
+	color: #ff9640;
+	cursor: auto;
+}
+
+.Button.disabled:hover {
+	background-color: #5CCCCC;
+}
+
+.LoginForm {
+	margin-top: 20px;
+}
+
+.LoginForm input {
+	font-size: 14px;
+	border: 3px solid #FFB273;
+	margin-bottom: 24px;
+	background-color: #5CCCCC;
+	padding-left: 10px;
+	padding-right: 10px;
+	width: 100%;
+	height: 40px;
+	box-sizing: border-box;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-khtml-border-radius: 10px;
+}
+
+.LoginForm input::-moz-placeholder {
+	color: #A60000;
+}
+
+.LoginForm input::-webkit-input-placeholder {
+	color: #A60000;
+}
+
+.LoginForm input:-ms-input-placeholder {
+	color: #A60000;
+}
+
+.LoginForm input:focus {
+	color: #A60000;
+	outline: 0;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}

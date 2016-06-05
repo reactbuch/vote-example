@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="UTF-8">
+    <title>Votes as a Service</title>
+    <link rel="stylesheet" href="tetra.css">
+  </head>
+
+
+  <body>
+    <!-- our application will be added as a child of this div -->
+    <div id="voteAppMountPoint"></div>
+  </body>
+
+  <!-- dist/vote-app.js will be created by Webpack -->
+  <script type="text/javascript"
+          src="dist/vote-app.js">
+  </script>
+  <script>
+    // https://developer.mozilla.org/en-US/docs/Web/API/Navigation_timing_API
+    function onLoad() {
+      var now = new Date().getTime();
+      var page_load_time = now - performance.timing.navigationStart;
+      console.log("User-perceived page loading time: " + page_load_time);
+    }
+    window.onload = onLoad;
+  </script>
+</html>

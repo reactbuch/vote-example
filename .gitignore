@@ -1,0 +1,11 @@
+node_modules/
+_dist/
+dist/
+mongodb-data/
+_generated/
+coverage/
+npm-debug.log
+
+# https://www.jetbrains.com/webstorm/help/managing-projects-under-version-control.html
+.idea/workspace.xml
+

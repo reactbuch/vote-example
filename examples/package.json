@@ -1,0 +1,22 @@
+{
+  "name": "reactbuch-examples",
+  "version": "1.0.0",
+  "description": "Simple React examples",
+  "scripts": {
+    "start": "node devserver.js"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.4.0",
+    "babel-loader": "^6.2.1",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "babel-preset-stage-0": "^6.3.13",
+    "webpack": "^1.12.10",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "dependencies": {
+    "react": "^0.14.6",
+    "react-dom": "^0.14.6"
+  }
+}
