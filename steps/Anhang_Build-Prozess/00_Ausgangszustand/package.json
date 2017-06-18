@@ -7,7 +7,7 @@
     "url": "https://nilshartmann@bitbucket.org/nilshartmann/reactbuch-vote-example.git"
   },
   "scripts": {
-    "start": "node server/index.js"
+    "start": "node src/server/index.js"
   },
   "author": "Nils Hartmann, Olli Zeigermann",
   "license": "MIT",
