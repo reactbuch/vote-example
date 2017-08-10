@@ -34,7 +34,7 @@ export default class VoteComposer extends React.Component {
 
   close() {
     const { onDeactivate } = this.props;
-    this.setState(emptyVote());
+    this.setState({vote: emptyVote()});
     onDeactivate();
   }
 
